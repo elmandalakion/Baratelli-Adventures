@@ -1,0 +1,7 @@
+Library/
+Temp/
+.vscode
+*.csproj
+*.sln
+*.user
+*.unityproj

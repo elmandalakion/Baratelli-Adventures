@@ -13,8 +13,7 @@ public class CoinManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); // Optional: keeps it alive across scenes
-        }
+            DontDestroyOnLoad(gameObject);         }
         else
         {
             Destroy(gameObject);
@@ -38,5 +37,6 @@ public class CoinManager : MonoBehaviour
         {
             Debug.LogWarning("coinText is not assigned! Please set it in the inspector.");
         }
+
     }
 }

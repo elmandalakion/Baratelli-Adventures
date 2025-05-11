@@ -3,15 +3,12 @@ using UnityEngine.SceneManagement;
 
 public class LevelChanger : MonoBehaviour
 {
-    public string sceneToLoad = "Level 2";
-    public GameObject twinkleEffect; 
-
-    void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            
-            SceneManager.LoadScene(sceneToLoad);
+            Debug.Log("Level complete! 🐸➡️ Next adventure awaits!");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }

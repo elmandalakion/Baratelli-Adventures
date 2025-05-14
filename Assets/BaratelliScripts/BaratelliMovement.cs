@@ -6,7 +6,7 @@ public class PleaseMove : MonoBehaviour
 
    
     public float minX = -20.2f;
-    public float maxX = Mathf.Infinity;
+    public float maxX = 109.9f;
     public float minZ = 1.04f;
     public float maxZ = 14.92f;
 
@@ -29,5 +29,6 @@ public class PleaseMove : MonoBehaviour
 
     }
 }
+
 
 

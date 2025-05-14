@@ -35,13 +35,13 @@ public class EquipShield : MonoBehaviour
         shieldEquipped = !shieldEquipped;
         shield.SetActive(shieldEquipped);
 
-        // ✅ Update inventory values!
+        
         inventory.hasShieldEquipped = shieldEquipped;
         inventory.hasSnakeWeapon = shieldEquipped;
 
         if (shieldEquipped)
         {
-            // Begin spin animation
+            
             originalRotation = shield.transform.localRotation;
             spinTimeRemaining = spinDuration;
             isSpinning = true;
@@ -64,7 +64,7 @@ public class EquipShield : MonoBehaviour
         }
         else
         {
-            // End of spin: snap to original rotation
+            
             shield.transform.localRotation = originalRotation;
             isSpinning = false;
         }

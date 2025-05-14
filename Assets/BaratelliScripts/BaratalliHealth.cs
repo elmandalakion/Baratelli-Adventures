@@ -6,19 +6,18 @@ public class BaratelliHealth : MonoBehaviour
     public int maxLives = 3;
     public int currentLives;
 
-    public Image[] heartImages; // Drag your heart UI Images here in the Inspector!
+    public Image[] heartImages; 
     public Sprite fullHeart;
     public Sprite emptyHeart;
 
-    [SerializeField] private Transform respawnPoint; // Drag your respawn point here!
+ 
+    [SerializeField] private Transform respawnPoint;
 
     void Start()
     {
         currentLives = maxLives;
         UpdateHearts();
-    }
-
-    public void TakeDamage(int amount)
+    }public void TakeDamage(int amount)
     {
         currentLives -= amount;
         currentLives = Mathf.Clamp(currentLives, 0, maxLives);
@@ -48,4 +47,6 @@ public class BaratelliHealth : MonoBehaviour
         transform.position = respawnPoint.position;
         UpdateHearts();
     }
+
+   
 }

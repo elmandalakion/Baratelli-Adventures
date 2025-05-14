@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SnakeAttack : MonoBehaviour
+public class SnakeAppears : MonoBehaviour
 {
     public GameObject snake; 
     void OnTriggerEnter(Collider other)
